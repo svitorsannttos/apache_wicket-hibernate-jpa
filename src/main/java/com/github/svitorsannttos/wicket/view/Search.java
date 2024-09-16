@@ -57,6 +57,15 @@ public class Search extends Base {
 						setResponsePage(new Edit(item.getModelObject()));
 					}
 				});
+				item.add(new Link<Void>("delete") {
+					private static final long serialVersionUID = 1L;
+
+					@Override
+					public void onClick() {
+						studentDAO.delete(item.getModelObject());
+						setResponsePage(new Search());
+					}
+				});
 			}
 		};
 
