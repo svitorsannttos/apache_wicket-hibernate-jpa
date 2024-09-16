@@ -8,13 +8,14 @@
   <wicket:extend>
     <h1>Search Students</h1>
     <form wicket:id="formSearch">
-      <input wicket:id="searchName" type="text" placeholder="Enter a name"/>
+      <a>Name </a>
+      <input wicket:id="searchName" type="text" placeholder="Enter a name"/><br>
       <button wicket:id="searchButton" type="submit">Search</button>
     </form>
     <br/>
-    <div wicket:id="divResults">
+    <div wicket:id="divResults" class="table-container">
       <table border="1">
-        <tr>
+        <tr class="table-header">
           <th>First Name</th>
           <th>Last Name</th>
           <th>Gender</th>
@@ -26,7 +27,7 @@
           <th>Uf</th>
           <th>Actions</th>
         </tr>
-        <tr wicket:id="listResults">
+        <tr wicket:id="listResults" class="table-cell">
           <td wicket:id="firstName">[firstName]</td>
           <td wicket:id="lastName">[lastName]</td>
           <td wicket:id="gender">[gender]</td>

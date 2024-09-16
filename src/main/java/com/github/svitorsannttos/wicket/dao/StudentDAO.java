@@ -30,6 +30,12 @@ public class StudentDAO implements Serializable {
         return typedQuery.getResultList();
     }
 
+    public List<Student> findByName(String name) {
+        String query = "select s from Student s where lower(firstName || lastName) like lower('%' || :name || '%')";
+        TypedQuery<Student> typedQuery = entityManager.createQuery(query, Student.class).setParameter("name", name);
+        return typedQuery.getResultList();
+    }
+
     public void save(Student student){
         entityManager.getTransaction().begin();
         entityManager.persist(student);

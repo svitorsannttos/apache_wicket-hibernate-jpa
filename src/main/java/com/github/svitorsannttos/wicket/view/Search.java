@@ -67,7 +67,7 @@ public class Search extends Base {
 
 			@Override
 			protected void onSubmit(AjaxRequestTarget target) {
-				List<Student> students = studentDAO.findAll();
+				List<Student> students = studentDAO.findByName(searchName.getValue());
 				listResults.setModelObject(students);
 				divResults.setVisible(true);
 				target.add(divResults);
