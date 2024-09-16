@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+  <meta charset="utf-8"/>
+  <title>Search Students</title>
+</head>
+<body>
+  <wicket:extend>
+    <h1>Search Students</h1>
+    <form wicket:id="formSearch">
+      <input wicket:id="searchName" type="text" placeholder="Enter a name"/>
+      <button wicket:id="searchButton" type="submit">Search</button>
+    </form>
+    <br/>
+    <div wicket:id="divResults">
+      <table border="1">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Gender</th>
+          <th>Age</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>Uf</th>
+          <th>Actions</th>
+        </tr>
+        <tr wicket:id="listResults">
+          <td wicket:id="firstName">[firstName]</td>
+          <td wicket:id="lastName">[lastName]</td>
+          <td wicket:id="gender">[gender]</td>
+          <td wicket:id="age">[age]</td>
+          <td wicket:id="email">[email]</td>
+          <td wicket:id="phone">[phone]</td>
+          <td wicket:id="address">[address]</td>
+          <td wicket:id="city">[city]</td>
+          <td wicket:id="uf">[uf]</td>
+          <td wicket:id="edit"><a href="#">edit</a></td>
+        </tr>
+      </table>
+    </div>
+  </wicket:extend>
+</body>
+</html>

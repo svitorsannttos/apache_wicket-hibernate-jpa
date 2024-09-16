@@ -1,0 +1,122 @@
+/* Definições globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Estilização da barra de navegação (leftBlock) */
+#leftBlock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+#leftBlock a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+#leftBlock a:hover {
+    background-color: #575757;
+}
+
+#rightBlock {
+    margin-left: 280px; /* Espaço para o menu lateral */
+    padding: 50px;
+    width: 60%; /* Largura proporcional à tela */
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo dentro do bloco */
+    align-items: center;
+    min-height: 60vh; /* Altura mínima para ocupar uma boa parte da tela */
+}
+
+/* Estilização do rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    color: #333333;
+}
+
+footer a {
+    color: #333333;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+button {
+    background-color: #5bc0de;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para inputs e selects no formulário de registro */
+form input[type="text"],
+form select {
+    width: calc(100% - 22px); /* Largura ajustada para incluir padding e borda */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Ajuste para inputs com margens superiores e inferiores maiores */
+form input[type="text"] {
+    margin-top: 10px;
+}
+
+/* Estilo para o botão de envio */
+form button {
+    background-color: #5bc0de;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #31b0d5;
+}
+
+/* Estilo para feedback de erro */
+#feedbackError {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+

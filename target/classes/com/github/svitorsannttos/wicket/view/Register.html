@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+  <meta charset="utf-8"/>
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="/css/styles.css"/>
+</head>
+<body>
+  <wicket:extend>
+    <h1 wicket:id="title">[Title]</h1>
+    <div id="feedbackError" wicket:id="feedbackError"></div>
+    <form wicket:id="formStudent" name="Student Registration Form">
+      <input wicket:id="firstName" type="text" placeholder="First Name"/>
+      <input wicket:id="lastName" type="text" placeholder="Last Name"/><br/>
+      <select wicket:id="gender">
+        <option>Primeira Opção (Será subscrito pelo Wicket)</option>
+        <option>Segunda Opção (Será subscrito pelo Wicket)</option>
+      </select>
+      <input wicket:id="age" type="text" placeholder="Age"/><br/>
+      <input wicket:id="email" type="text" placeholder="Email"/>
+      <input wicket:id="phone" type="text" placeholder="Phone"/><br/>
+      <input wicket:id="zipCode" type="text" placeholder="Zip Code"/>
+      <input wicket:id="address" type="text" placeholder="Address"/><br/>
+      <input wicket:id="city" type="text" placeholder="City"/>
+      <input wicket:id="uf" type="text" placeholder="UF"/><br/>
+      <button type="submit" name="submit">Submit</button>
+    </form>
+  </wicket:extend>
+</body>
+</html>
